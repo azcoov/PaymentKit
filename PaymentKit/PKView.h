@@ -40,4 +40,7 @@
 @property (nonatomic, weak) id <PKViewDelegate> delegate;
 @property (readonly) PKCard *card;
 
+- (void)stateMeta;
+- (void)setPlaceholderToCardType;
+
 @end
