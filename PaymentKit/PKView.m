@@ -131,7 +131,7 @@
 
     self.cardNumberField.delegate = self;
 
-    self.cardNumberField.placeholder = NSLocalizedStringFromTable(@"placeholder.card_number", @"STPaymentLocalizable", nil);
+    self.cardNumberField.placeholder = NSLocalizedStringWithDefaultValue(@"placeholder.card_number", nil, [NSBundle mainBundle], @"4242 4242 4242 4242", @"4242424242424242");
     self.cardNumberField.keyboardType = UIKeyboardTypeNumberPad;
     self.cardNumberField.textColor = DarkGreyColor;
     self.cardNumberField.font = DefaultBoldFont;
@@ -143,7 +143,7 @@
 {
     self.cardExpiryField = [[PKTextField alloc] initWithFrame:CGRectMake(kPKViewCardExpiryFieldStartX, 0, 60, 20)];
     self.cardExpiryField.delegate = self;
-    self.cardExpiryField.placeholder = NSLocalizedStringFromTable(@"placeholder.card_expiry", @"STPaymentLocalizable", nil);
+    self.cardExpiryField.placeholder = NSLocalizedStringWithDefaultValue(@"placeholder.card_expiry", nil, [NSBundle mainBundle], @"01/17", @"01/17");
     self.cardExpiryField.keyboardType = UIKeyboardTypeNumberPad;
     self.cardExpiryField.textColor = DarkGreyColor;
     self.cardExpiryField.font = DefaultBoldFont;
@@ -155,7 +155,7 @@
 {
     self.cardCVCField = [[PKTextField alloc] initWithFrame:CGRectMake(kPKViewCardCVCFieldStartX, 0, 55, 20)];
     self.cardCVCField.delegate = self;
-    self.cardCVCField.placeholder = NSLocalizedStringFromTable(@"placeholder.card_cvc", @"STPaymentLocalizable", nil);
+    self.cardCVCField.placeholder = NSLocalizedStringWithDefaultValue(@"placeholder.card_cvc", nil, [NSBundle mainBundle], @"CVC", @"CVC");
     self.cardCVCField.keyboardType = UIKeyboardTypeNumberPad;
     self.cardCVCField.textColor = DarkGreyColor;
     self.cardCVCField.font = DefaultBoldFont;
