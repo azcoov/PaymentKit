@@ -37,6 +37,8 @@
 - (void)setupCardNumberField;
 - (void)setupCardExpiryField;
 - (void)setupCardCVCField;
+- (void)stateMeta;
+- (void)setPlaceholderToCardType;
 
 - (void)pkTextFieldDidBackSpaceWhileTextIsEmpty:(PKTextField *)textField;
 
